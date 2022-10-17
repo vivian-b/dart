@@ -1,0 +1,97 @@
+* {
+    margin: 0.2%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+background-color: goldenrod;
+color: black;
+
+display: flex;
+justify-content: center;
+position: fixed;
+
+bottom:0;
+left:0;
+
+width: 100%;
+height: 200px;
+z-index: 4;
+
+}
+
+nav a{
+color: black;
+font-size: 200px;
+margin-left: 50px;
+
+transition: all .5s;
+}
+
+nav a:hover{
+    background-color: brown;
+}
+
+.parent{
+    width: 80%;
+    background: burlywood ;
+    margin: 0 auto;
+    position: relative;
+    /* relative parent -> absolute child stays inside */
+}
+
+/* align = vertical
+justified = horizontal */
+div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+
+    background-color: brown;
+    color: white;
+    font-size: 30px;
+
+    margin: 10px;
+    border-radius: 10%;
+
+transition: all 0.5s;
+
+}
+
+div:hover{
+    box-shadow: 0px 0px 10px rgba(10,10,10,0.6);
+    border-radius: 50%;
+    scale: 60%;
+}
+
+/* relative: move in a position relative to where it is supposed to be */
+.rel {
+    position: relative;
+    background-color: beige;
+    color: orangered;
+
+    left: 20px;
+    top: 50px;
+}
+
+/* absolute: other elements act as if it did not exist */
+.abso{
+    position: absolute;
+    background-color: orangered;
+    right:-10;
+    top:-100;
+
+    transition: all .5s;
+
+}
+
+.abso:hover{
+    border-radius: 50%;
+
+}
