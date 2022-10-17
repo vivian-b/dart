@@ -1,0 +1,155 @@
+* {
+    margin: 0.2%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff7ec;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+#dart {
+    color: #3c459e;
+
+}
+
+/* grids set-up */
+
+#grid-container {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 5% 2fr 2fr;
+    gap: 6% 11%;
+}
+
+#grid-nav {
+    display: flex;
+    flex-direction: column ;
+    
+
+    grid-column: 1;
+    grid-row: 1/2;
+
+    width: 15vw;
+
+    background-color: #d6d9f7;
+    border: #3c459e solid 2px;
+    padding: 20px;
+}
+
+.nav-box {
+    height: 40px;
+    width: 50%;
+
+}
+
+#grid-header {
+    grid-column: 2/3;
+    grid-row: 1;
+
+    width: 80vw;
+    align-self: flex-end;
+}
+
+#grid-article {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 2%;
+
+}
+
+#grid-footer {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#exercise-grid {
+    display: grid;
+
+    grid-template-columns: 200px 200px 200px;
+    gap: 30px 30px;
+}
+
+.exercises-column1,
+.exercises-column2,
+.exercises-column3 {
+    border-left: #7b83ca 3px dotted;
+    padding-left: 5%;
+}
+
+.exercise-item{
+margin-bottom: 8%;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.midterm {
+    grid-column: 1;
+
+    border-left: #3c459e 3px dotted;
+    padding: 0 5%;
+}
+
+.final {
+    grid-column: 2;
+    grid-row: 2;
+
+    border-left: #3c459e 3px dotted;
+    padding: 0 5%;
+}
+
+/*  */
+header {
+    color: #8c93d3;
+    padding-bottom: 2%;
+    border-bottom: 5px dotted #777db69f;
+    margin: 0 2%;
+}
+
+article {
+    line-height: 175%;
+}
+
+footer {
+    font-size: 60%;
+    height: 10%;
+}
+
+/* text styling */
+a {
+    text-decoration: none;
+    color: #777db6;
+}
+
+a:visited{
+    color: #777db68a;
+}
+
+h1 {
+    font-size: 400%;
+    color: #3c459e;
+}
+
+h2 {
+    font-size: 110%;
+    color: #3c459e;
+}
+
+h3{
+    color: #3c459e;
+}
+
+.active {
+    background-color: white;
+}
+
+.ex-link {
+    color: #777db6;
+    background-color: #ebe6ff;
+}
