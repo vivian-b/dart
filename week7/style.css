@@ -40,7 +40,7 @@ a {
 
 h1 {
     font-size: 200%;
-   }
+}
 
 .title {
     display: flex;
@@ -49,9 +49,10 @@ h1 {
     margin-bottom: 5%;
 }
 
-.link{
+.link {
     color: red;
 }
+
 h2 {
     font-size: 130%;
     margin-right: 10px;
@@ -63,8 +64,8 @@ article {
     border-top: 1px solid black;
 }
 
-article:hover{
-border: 4px solid red;
+article:hover {
+    border: 4px solid red;
 }
 
 .intro {
@@ -72,26 +73,35 @@ border: 4px solid red;
     font-weight: bold;
 }
 
-img{
+img {
     width: 25vw;
 }
 
-.ss{
+.ss {
     display: flex;
     width: 100vw;
     justify-content: center;
 }
 
-h3{
-align-self: center;
-margin-right: 20%;
-margin-left: 5%;
+h3 {
+    align-self: center;
+    margin-right: 20%;
+    margin-left: 5%;
 }
 
-.stylesheet{
+.stylesheet {
     width: 75vw;
 }
 
 .inspo {
-   width: 17%;
+    width: 17%;
+}
+
+.references{
+    color: red;
+}
+
+.note{
+    width: 40%;
+    margin: 5%;
 }
