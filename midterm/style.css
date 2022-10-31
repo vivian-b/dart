@@ -87,14 +87,14 @@ article:hover {
 }
  
 img {
-    width: 25vw;
+    width: 23vw;
     margin-right: 20px;
 }
 
 .ss {
     display: flex;
     width: 100vw;
-    justify-content: center;
+    justify-content: start;
 }
 
 /*  */
