@@ -15,28 +15,14 @@ header {
     font-size: 20px;
 }
 
+ /*  */
+
 .nav_bg {
     background-color: black;
     padding: 20px;
     margin-bottom: 7vh;
 }
 
-a:hover {
-    border-bottom: 2px solid white;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    margin-right: 40px;
-}
-
-.active {
-    background-color: white;
-    font-weight: bold;
-    color: black;
-    padding: 8px;
-}
 
 .title {
     display: flex;
@@ -60,9 +46,30 @@ h3 {
     margin-left: 5%;
 }
 
+/*  */
+
+a:hover {
+    border-bottom: 2px solid white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.active {
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    padding: 8px;
+}
+
 .link {
     color: red;
 }
+
+/*  */
 
 article {
     margin: 30px;
@@ -78,7 +85,7 @@ article:hover {
     font-size: 25px;
     font-weight: bold;
 }
-
+ 
 img {
     width: 25vw;
     margin-right: 20px;
@@ -90,16 +97,11 @@ img {
     justify-content: center;
 }
 
+/*  */
 .stylesheet {
     width: 75vw;
 }
 
 .inspo {
     width: 17%;
-}
-
-
-.note{
-    width: 40%;
-    margin: 5%;
 }
