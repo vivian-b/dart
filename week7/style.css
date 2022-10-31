@@ -38,10 +38,6 @@ a {
     padding: 8px;
 }
 
-h1 {
-    font-size: 200%;
-}
-
 .title {
     display: flex;
     width: 100vw;
@@ -49,13 +45,23 @@ h1 {
     margin-bottom: 5%;
 }
 
-.link {
-    color: red;
+h1 {
+    font-size: 200%;
 }
 
 h2 {
     font-size: 130%;
     margin-right: 10px;
+}
+
+h3 {
+    align-self: center;
+    margin-right: 20%;
+    margin-left: 5%;
+}
+
+.link {
+    color: red;
 }
 
 article {
@@ -75,18 +81,13 @@ article:hover {
 
 img {
     width: 25vw;
+    margin-right: 20px;
 }
 
 .ss {
     display: flex;
     width: 100vw;
     justify-content: center;
-}
-
-h3 {
-    align-self: center;
-    margin-right: 20%;
-    margin-left: 5%;
 }
 
 .stylesheet {
@@ -97,9 +98,6 @@ h3 {
     width: 17%;
 }
 
-.references{
-    color: red;
-}
 
 .note{
     width: 40%;
