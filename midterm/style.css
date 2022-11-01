@@ -15,7 +15,7 @@ header {
     font-size: 20px;
 }
 
- /*  */
+/*  */
 
 .nav_bg {
     background-color: black;
@@ -69,6 +69,8 @@ a {
     color: red;
 }
 
+
+
 /*  */
 
 article {
@@ -85,9 +87,9 @@ article:hover {
     font-size: 25px;
     font-weight: bold;
 }
- 
+
 img {
-    width: 50vw;
+    width: 25vw;
     margin-right: 20px;
 }
 
@@ -99,7 +101,7 @@ img {
 
 
 
-.note{
+.note {
     align-self: center;
 }
 
@@ -112,9 +114,9 @@ img {
     width: 17%;
 }
 
-.column{
-width: 255px;
-flex-wrap: wrap;
-
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
 }
-
