@@ -23,10 +23,13 @@ header {
     font-style: normal;
 
     font-size: 100%;
+
     padding-left: 2vw;
 }
 
+
 #grid-container {
+    background-color: grey;
     width: 100vw;
     display: grid;
     min-height: 100vh;
@@ -53,7 +56,7 @@ header {
 
 #main-section {
     background-color: gainsboro;
-    border: 4px solid black;
+    border: 5px solid black;
     width: 100vw;
     height: 80vh;
 
@@ -70,38 +73,40 @@ header {
 
     width: 100%;
     height: 100%;
+    background-color: burlywood;
 }
 
 
 
 
-#news-articles {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    width: 70vw;
+#news-articles{
+display: flex;
+flex-direction: row;
+height: auto;
+width: 70vw;
+background-color: azure;
+
 
 }
 
 #intro {
     grid-column: 1/1;
+  
 }
 
-.absolute {
+.absolute{
     position: absolute;
     background-color: black;
     color: red;
 }
-
-#hidden-intro {
-    width: 100%;
-    height: 15%;
-    z-index: 4;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 50%;
-
-    background-color: gainsboro;
+#hidden-intro{
+width: 100vw;
+height: 15%;
+ background-color: burlywood;
+ z-index: 4;
+ position: -webkit-sticky;
+ position: sticky;
+ top: 50%;
 }
 
 #top-list {
@@ -112,20 +117,22 @@ header {
     flex-direction: column;
 
     width: 80%;
-    height: 65%;
-    padding: 8%;
+    height: 85%;
+    padding: 20px;
+
+    background-color: goldenrod;
+
     align-self: center;
     justify-self: end;
 
-    border: 1px solid black;
 }
-
-
 
 .box {
 
     grid-column: 2/2;
     grid-row: 2;
+
+    background-color: aquamarine;
     width: 100%;
     height: 100%;
 
@@ -135,12 +142,15 @@ header {
 
 article {
     width: auto;
+    background-color: bisque;
     padding: 5%;
 }
 
 #grid-articles {
     width: 100vw;
     margin-top: 2%;
+
+    background-color: burlywood;
     grid-column: 1/2;
 
     display: grid;
@@ -155,14 +165,16 @@ article {
 
 }
 
-/* .long-articles:hover,
-.long-articles:hover::after {
+.long-articles:hover, .long-articles:hover::after{    
     background-color: black;
     color: white;
     transition: all 0.2s;
-} */
+}
+/* does not work */
+.long-articles:hover::after{
+    transition: all 0.2s;
 
-
+}
 #short-section {
     grid-column: 2/2;
 
@@ -177,7 +189,7 @@ article {
     width: 85%;
     height: 20%;
 
-    justify-self: end;
+    justify-self: end ;
     background-color: red;
 
     position: -webkit-sticky;
@@ -186,42 +198,33 @@ article {
 }
 
 .long-articles {
-    border: 4px solid black;
+    border: 4px solid red;
     width: 45vw;
     margin-bottom: 8%;
-    color: black;
 }
 
-
-
-
 .short-articles {
+    border: 4px solid blue;
     width: 23vw;
 
     margin-bottom: 8%;
 
 }
 
-.listed-articles {
+.listed-articles{
     margin-top: 5%;
     padding: 2%;
     border-bottom: 1px solid black;
 
 }
 
-.recent-news {
+.recent-news{
     width: 50%;
-    grid-column: 1;
+grid-column: 1;
 }
 
-.listed-news {
+.listed-news{
     margin-bottom: 5%;
-    transition: 0.2s;
-}
-
-.listed-news:hover {
-   border-left: 5px solid red;
-   padding-left: 4%;
 }
 
 h1 {
@@ -232,14 +235,15 @@ h1 {
     font-style: normal;
 
     display: flex;
-    width: 30%;
+    width: 100%;
     margin-bottom: 5%;
 
 }
 
 h2 {
     font-size: 160%;
-    margin-bottom: 9%;
+
+    margin-bottom: 4%;
 }
 
 h3 {
@@ -272,9 +276,9 @@ h4 {
 /*  */
 
 
-a {
+a{
     text-decoration: none;
-    color: black;
+color: black;
 }
 
 .active {
@@ -287,6 +291,7 @@ a {
     background-color: black;
     padding: 2.5vh 0vw 3vh 2vw;
     margin-bottom: 8vh;
+
 }
 
 /* source: https://codepen.io/danhearn/pen/pgQPyo */
@@ -354,66 +359,17 @@ img {
     width: 200px;
 }
 
-#red-bg{
-    width: 100vw;
-    height: 100vh;
-  position: fixed;
-  pointer-events: none;
-
-}
-
-.reveal{
-    opacity: 85%;
-    background-color: brown;
-    z-index: 0;
-    position: fixed;
-
-}
-
-.revealB{
-    opacity: 85%;
-    background-color: black;
-
-}
-
-.blur{
-
-    overflow: hidden;
-    filter: blur(3px);
-    position: absolute;
-   color: white;
-   }
-  
-.textHL{
-    display: inline;
-  
-}
-
-.highlight{
-    display: inline;
-    color: red;
-    background-color: yellow;
-    z-index: 2;
-    position: relative;
-}
-
-.float{
-    z-index: 2;
-    position: relative;
-    color: white;
-    border: white;
-}
-
 /*  */
 
-/* @media (min-width:600px) {
-    #grid-container 1{
+@media (min-width:600px) {
+    #grid-container {
         grid-template-columns: 3fr 3fr 1fr;
         grid-template-areas:
             "main-article"
             "header"
             "footer";
     }
-} */
+}
 
 /* test */
+
