@@ -3,14 +3,90 @@ $(document).ready(function () {
   $(".trigger").hover(
     function () {
       $("#red-bg").addClass("reveal", 100, "swing");
-      $(".textHL").addClass("highlight", 100, "swing");
+      $(".hl1 .textHL").addClass("highlight", 100, "swing");
       $(this).addClass("float", 100, "swing");
+
+      $(".hiddenLongArticles").addClass("revealed", 100, "swing");
+
     },
 
     function () {
       $("#red-bg").removeClass("reveal", 100, "swing");
       $(".textHL").removeClass("highlight", 100, "swing");
       $(this).removeClass("float", 100, "swing");
+      $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
+
+    }
+  );
+
+  $(".trigger2").hover(
+    function () {
+      $("#red-bg").addClass("reveal", 100, "swing");
+      $(".hl2 .textHL").addClass("highlight", 100, "swing");
+      $(this).addClass("float", 100, "swing");
+      $(".hiddenLongArticles").addClass("revealed", 100, "swing");
+
+    },
+
+    function () {
+      $("#red-bg").removeClass("reveal", 100, "swing");
+      $(".textHL").removeClass("highlight", 100, "swing");
+      $(this).removeClass("float", 100, "swing");
+      $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
+
+    }
+  );
+
+  $(".trigger3").hover(
+    function () {
+      $("#red-bg").addClass("reveal", 100, "swing");
+      $(".hl3 .textHL").addClass("highlight", 100, "swing");
+      $(this).addClass("float", 100, "swing");
+      $(".hiddenLongArticles").addClass("revealed", 100, "swing");
+
+    },
+
+    function () {
+      $("#red-bg").removeClass("reveal", 100, "swing");
+      $(".textHL").removeClass("highlight", 100, "swing");
+      $(this).removeClass("float", 100, "swing");
+      $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
+
+    }
+  );
+
+  $(".redacted").hover(
+    function () {
+      $(".redacted").addClass("highlightW");
+      $(".redacted").addClass("blur");
+    },
+
+    function () {
+      $(".redacted").removeClass("highlightW");
+      $(".redacted").removeClass("blur");
+    }
+  );
+
+  $(".faded").hover(
+    function () {
+      $(this).addClass("fading", 600, "swing");
+    },
+
+    function () {
+      $(this).removeClass("fading", 800, "swing");
+    }
+  );
+
+  $(".morph").hover(
+    function () {
+      $(".image").addClass("image2");
+
+
+    },
+
+    function () {
+      $(".image").removeClass("image2");
+
     }
   );
 
@@ -18,17 +94,37 @@ $(document).ready(function () {
   //
 
   // change element
-  $(" .trigger2").hover(
+  $(" .triggerB").hover(
     function () {
       $("#red-bg").addClass("revealB", 100, "swing");
+      $(".main-title .textHL").addClass("highlightB", 100, "swing");
+
       $(this).addClass("float", 100, "swing");
     },
 
     function () {
       $("#red-bg").removeClass("revealB", 100, "swing");
+      $(".textHL").removeClass("highlightB", 100, "swing");
+
       $(this).removeClass("float", 100, "swing");
 
       // $(this).removeClass('blur',50, "swing");
+    }
+  );
+
+  $(" .triggerB2").hover(
+    function () {
+      $("#red-bg").addClass("revealB", 100, "swing");
+
+      $(this).addClass("float", 100, "swing");
+      $(".hiddenOldNews").addClass("revealed", 100, "swing");
+    },
+
+    function () {
+      $("#red-bg").removeClass("revealB", 100, "swing");
+
+      $(this).removeClass("float", 100, "swing");
+      $(".hiddenOldNews").removeClass("revealed", 100, "swing");
     }
   );
 
