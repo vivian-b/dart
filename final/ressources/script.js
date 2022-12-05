@@ -1,60 +1,63 @@
+// reference: 
+// https://codepen.io/zenadesign/pen/bevJRP
+
 $(document).ready(function () {
-  // change element
+  // article 1: hover interaction
+  // red background + highlighted text + reveal old articles
   $(".trigger").hover(
     function () {
-      $("#red-bg").addClass("reveal", 100, "swing");
+      $("#background-color").addClass("reveal", 100, "swing");
       $(".hl1 .textHL").addClass("highlight", 100, "swing");
       $(this).addClass("float", 100, "swing");
-
       $(".hiddenLongArticles").addClass("revealed", 100, "swing");
-
     },
 
     function () {
-      $("#red-bg").removeClass("reveal", 100, "swing");
+      $("#background-color").removeClass("reveal", 100, "swing");
       $(".textHL").removeClass("highlight", 100, "swing");
       $(this).removeClass("float", 100, "swing");
       $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
-
     }
   );
 
+  // article 2: hover interaction
+  // red background + highlighted text + reveal old articles
   $(".trigger2").hover(
     function () {
-      $("#red-bg").addClass("reveal", 100, "swing");
+      $("#background-color").addClass("reveal", 100, "swing");
       $(".hl2 .textHL").addClass("highlight", 100, "swing");
       $(this).addClass("float", 100, "swing");
       $(".hiddenLongArticles").addClass("revealed", 100, "swing");
-
     },
 
     function () {
-      $("#red-bg").removeClass("reveal", 100, "swing");
+      $("#background-color").removeClass("reveal", 100, "swing");
       $(".textHL").removeClass("highlight", 100, "swing");
       $(this).removeClass("float", 100, "swing");
       $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
-
     }
   );
 
+  // article 3: hover interaction
+  // red background + highlighted text + reveal old articles
   $(".trigger3").hover(
     function () {
-      $("#red-bg").addClass("reveal", 100, "swing");
+      $("#background-color").addClass("reveal", 100, "swing");
       $(".hl3 .textHL").addClass("highlight", 100, "swing");
       $(this).addClass("float", 100, "swing");
       $(".hiddenLongArticles").addClass("revealed", 100, "swing");
-
     },
 
     function () {
-      $("#red-bg").removeClass("reveal", 100, "swing");
+      $("#background-color").removeClass("reveal", 100, "swing");
       $(".textHL").removeClass("highlight", 100, "swing");
       $(this).removeClass("float", 100, "swing");
       $(".hiddenLongArticles").removeClass("revealed", 100, "swing");
-
     }
   );
 
+  // "racism": hover interaction
+  // blurring
   $(".redacted").hover(
     function () {
       $(".redacted").addClass("highlightW");
@@ -67,6 +70,8 @@ $(document).ready(function () {
     }
   );
 
+  // "asian": hover interaction
+  // fade out
   $(".faded").hover(
     function () {
       $(this).addClass("fading", 600, "swing");
@@ -77,33 +82,30 @@ $(document).ready(function () {
     }
   );
 
+  // title: hover interaction
+  // image change
   $(".morph").hover(
     function () {
       $(".image").addClass("image2");
-
-
     },
 
     function () {
       $(".image").removeClass("image2");
-
     }
   );
 
-  //
-  //
-
-  // change element
-  $(" .triggerB").hover(
+  // title: hover interaction
+  // black background + text highlight
+  $(".triggerB").hover(
     function () {
-      $("#red-bg").addClass("revealB", 100, "swing");
+      $("#background-color").addClass("revealB", 100, "swing");
       $(".main-title .textHL").addClass("highlightB", 100, "swing");
 
       $(this).addClass("float", 100, "swing");
     },
 
     function () {
-      $("#red-bg").removeClass("revealB", 100, "swing");
+      $("#background-color").removeClass("revealB", 100, "swing");
       $(".textHL").removeClass("highlightB", 100, "swing");
 
       $(this).removeClass("float", 100, "swing");
@@ -112,34 +114,26 @@ $(document).ready(function () {
     }
   );
 
+  // top news: hover interaction
+  // black background + text highlight
   $(" .triggerB2").hover(
     function () {
-      $("#red-bg").addClass("revealB", 100, "swing");
+      $("#background-color").addClass("revealB", 100, "swing");
 
       $(this).addClass("float", 100, "swing");
       $(".hiddenOldNews").addClass("revealed", 100, "swing");
     },
 
     function () {
-      $("#red-bg").removeClass("revealB", 100, "swing");
+      $("#background-color").removeClass("revealB", 100, "swing");
 
       $(this).removeClass("float", 100, "swing");
       $(".hiddenOldNews").removeClass("revealed", 100, "swing");
     }
   );
-
-  // https://codepen.io/zenadesign/pen/bevJRP
-
-  $(function () {
-    $("li").mouseover(function () {
-      $(this).addClass("active");
-    });
-    $("li").mouseout(function () {
-      $(this).removeClass("active");
-    });
-  });
 });
 
+// unused interactions
 // // https://codepen.io/daveredfern/pen/zBGBJV
 // $(window).scroll(function() {
 
@@ -174,3 +168,12 @@ $(document).ready(function () {
 //     });
 
 //   }).scroll();
+
+  // $(function () {
+  //   $("li").mouseover(function () {
+  //     $(this).addClass("active");
+  //   });
+  //   $("li").mouseout(function () {
+  //     $(this).removeClass("active");
+  //   });
+  // });
